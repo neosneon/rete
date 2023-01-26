@@ -16,13 +16,17 @@ class auth extends BaseController
     {
         $username = $this->request->getVar('username');
         $password = $this->request->getVar('pasword');
-        
-        $user = $this->authmodel->find(['username'=>$username]);
+        $user = $this->authmodel->first(['username'=>$username]);
         if($user){
-            if(password_verify($password,$user['password'])){
-                // JIKA PASSWORD BENAR
+            if(password_verify($password,$user['password']) && $user['username'] == $username){
+                return redirect()->to('/contoh');
+                die;
             }else{
                 // Jika password Salah
+                echo ("<script LANGUAGE='JavaScript'>
+                window.alert('Gagal');
+                window.location.href='/login';
+                </script>");
             }
         }else{
             // Jika User tidak ada
@@ -38,6 +42,18 @@ class auth extends BaseController
             'status' =>1,
         ];
         $this->authmodel->save($data,false);
+    }
+
+
+    // Frontend / page
+    public function register(){
+        return view('auth/register');
+    }
+    public function login(){
+        return view('auth/login');
+    }
+    public function contoh(){
+        return view('auth/contoh');
     }
 
     

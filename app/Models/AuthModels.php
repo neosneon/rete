@@ -7,17 +7,13 @@ use CodeIgniter\Model;
 class AuthModels extends Model
 {
     protected $table      = 'user';
-
     protected $useAutoIncrement = true;
-
     protected $allowedFields =
     [
-        'user',
+        'username',
         'password',
         'role_id',
         'status'
-   
-
     ];
 
     protected $useTimestamps = true;

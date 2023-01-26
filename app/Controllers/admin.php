@@ -13,28 +13,28 @@ class admin extends BaseController
         $this->adminmodels = new AdminModels();
     }
    public function provinsi(){
-    $this->adminmodels->addvaluearea('provinsi',$this->request->getVar('provinsi'));
+    $this->adminmodels->InputData('provinsi',$this->request->getVar('provinsi'));
    }
    public function kecamatan(){
-    $this->adminmodels->addvaluearea('kecamatan',$this->request->getVar('kecamatan'));
+    $this->adminmodels->InputData('kecamatan',$this->request->getVar('kecamatan'));
    }
    public function kelurahan(){
-    $this->adminmodels->addvaluearea('kelurahan',$this->request->getVar('kelurahan'));
+    $this->adminmodels->InputData('kelurahan',$this->request->getVar('kelurahan'));
    }
    public function rt(){
-    $this->adminmodels->addvaluearea('rt',$this->$this->request->getVar('rt'));
+    $this->adminmodels->InputData('rt',$this->$this->request->getVar('rt'));
    }
    public function rw(){
-    $this->adminmodels->addvaluearea('rw',$this->$this->request->getVar('rw'));
+    $this->adminmodels->InputData('rw',$this->$this->request->getVar('rw'));
    }
    public function kk(){
         $this->adminmodels->save($this->request->getVar);
    }
    public function maping(){
-    $this->adminmodels->mapingmod('maping',$this->request->getVar());
+    $this->adminmodels->InputData('maping',$this->request->getVar());
    }
    public function data_warga(){
-    $this->adminmodels->data_wargamod('data_warga',$this->request->getVar());
+    $this->adminmodels->InputData('data_warga',$this->request->getVar());
    }
    public function home(){
 
@@ -81,4 +81,15 @@ class admin extends BaseController
    public function delete_kk(){
     $this->adminmodels->where('id',$this->request->getVar('id'))->delete();
    }
+
+
+
+
+//    CONTOH
+   public function cnth(){
+    $data = $this->adminmodels->getdata('data_warga',['nama_lengkap'=>'shafa']);
+     echo($data[0]['nama_lengkap']);
+     echo($data[0]['ayah']);
+     echo($data[0]['NIK']);
+}
 }

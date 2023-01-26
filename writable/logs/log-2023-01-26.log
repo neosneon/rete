@@ -1,0 +1,48 @@
+CRITICAL - 2023-01-26 12:19:19 --> Undefined index: role
+in APPPATH\Controllers\admin.php on line 91.
+ 1 APPPATH\Controllers\admin.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: role', 'APPPATH\\Controllers\\admin.php', 91, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\admin->cnth()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-26 12:19:19 --> Undefined index: role
+in APPPATH\Controllers\admin.php on line 91.
+ 1 APPPATH\Controllers\admin.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: role', 'APPPATH\\Controllers\\admin.php', 91, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\admin->cnth()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-26 12:19:19 --> Undefined index: role
+in APPPATH\Controllers\admin.php on line 91.
+ 1 APPPATH\Controllers\admin.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: role', 'APPPATH\\Controllers\\admin.php', 91, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\admin->cnth()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-26 12:19:19 --> Undefined index: role
+in APPPATH\Controllers\admin.php on line 91.
+ 1 APPPATH\Controllers\admin.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: role', 'APPPATH\\Controllers\\admin.php', 91, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\admin->cnth()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-26 12:27:58 --> Call to undefined method App\Models\AdminModels::data_wargamod
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\admin.php(37): CodeIgniter\Model->__call('data_wargamod', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\admin->data_warga()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-26 12:31:46 --> Undefined index: no_kk
+in APPPATH\Controllers\admin.php on line 93.
+ 1 APPPATH\Controllers\admin.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: no_kk', 'APPPATH\\Controllers\\admin.php', 93, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\admin->cnth()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

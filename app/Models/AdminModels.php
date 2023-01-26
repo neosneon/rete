@@ -24,13 +24,12 @@ class AdminModels extends Model
         'foto_kk'
 
     ];
-
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
-    
 
-    public function addvaluearea($table,$data){
+
+    public function InputData($table,$data){
         $db      = \Config\Database::connect();
         $builder = $db->table($table);
         $builder->insert($data);
@@ -40,7 +39,7 @@ class AdminModels extends Model
         $builder = $db->table($table);
         $builder->select('*');
         $builder->where($condition);
-        $result = $builder->get();
+        $result = $builder->get()->getResultArray();
         return $result;
     }
     public function update_data($table,$condition,$value){
